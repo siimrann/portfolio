@@ -5,10 +5,10 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { BackgroundGradientAnimation } from "./GradientBg";
+import GridGlobe from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -22,8 +22,7 @@ export const BentoGrid = ({
       className={cn(
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-8 lg:gap-8 mx-auto",
         className
-      )}
-    >
+      )}>
       {children}
     </div>
   );
@@ -64,7 +63,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "kushagrasaxena061@gmail.com";
+    const text = "tyagisimran938@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -79,8 +78,7 @@ export const BentoGridItem = ({
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
-    >
+      }}>
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
@@ -94,8 +92,7 @@ export const BentoGridItem = ({
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
-          } `}
-        >
+          } `}>
           {spareImg && (
             <img
               src={spareImg}
@@ -115,11 +112,9 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
-          )}
-        >
+          )}>
           <div
-            className={`font-sans text-lg text-white dark:text-white lg:text-3xl max-w-96 font-bold z-10`}
-          >
+            className={`font-sans text-lg text-white dark:text-white lg:text-3xl max-w-96 font-bold z-10`}>
             {title}
           </div>
           <div className="font-sans md:max-w-32 text-white dark:text-white lg:text-base text-sm  z-10">
@@ -135,8 +130,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-bold text-white"
-                  >
+                    lg:opacity-100 rounded-lg text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-bold text-white">
                     {item}
                   </span>
                 ))}
@@ -148,8 +142,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-bold text-white"
-                  >
+                    lg:opacity-100 rounded-lg text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-bold text-white">
                     {item}
                   </span>
                 ))}
@@ -161,8 +154,7 @@ export const BentoGridItem = ({
               <div
                 className={`absolute -bottom-5 right-0  rounded-md h-8 md:h-8${
                   copied ? "block" : "block"
-                }`}
-              >
+                }`}>
                 <img src="/confetti.gif" alt="confetti" />
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>

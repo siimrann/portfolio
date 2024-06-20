@@ -110,16 +110,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/kushagrasaxena061",
+    link: "https://github.com/siimrann",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link: "https://x.com/_kushagrasaxena",
+    link: "",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/kushagra-saxena-816831224/",
+    link: "https://www.linkedin.com/in/siimran/",
   },
 ];
